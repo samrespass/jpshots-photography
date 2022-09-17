@@ -1,0 +1,22 @@
+[
+    { 
+    "gallery_description": "You'll describe the gallery info in the JSON files and then we'll render them up front when users view them. This one's about engagements",
+     "name": "Kansas City Engagement Photo",
+     "category": "Engagements",
+     "image": "https://i.imgur.com/AuRoq0i.jpg",
+     "alt": "Kansas City golden hour engagement photo"
+    },
+    { 
+        "name": "Kansas City Engagement Photo",
+        "category": "Engagements",
+        "image": "https://i.imgur.com/2WAmDxK.jpg",
+        "alt": "Kansas City couple engagement photo"
+       },
+       { 
+        "name": "Kansas City Engagement Photo",
+        "category": "Engagements",
+        "image": "https://i.imgur.com/oFGUCP7.jpg",
+        "alt": "Kansas City mature couple engagement photo"
+       }
+    
+    ]

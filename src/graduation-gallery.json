@@ -1,0 +1,22 @@
+[
+    
+    {
+    "gallery_description": "You'll describe the gallery info in the JSON files and then we'll render them up front when users view them. This one's about graduations", 
+     "name": "Kansas City Senior Photo",
+     "category": "Graduation",
+     "image": "https://i.imgur.com/e1W4g2A.jpg",
+     "alt": "Kansas City Senior Graduation Photo"
+    },
+    { 
+        "name": "Kansas City Senior Photo",
+        "category": "Graduation",
+        "image": "https://i.imgur.com/xySNPb3.jpg",
+        "alt": "Kansas City Senior Graduation Photo"
+       },
+       { 
+        "name": "Kansas City Senior Photo",
+        "category": "Graduation",
+        "image": "https://i.imgur.com/lTG2gHn.jpg",
+        "alt": "Kansas City Senior Baseball Player Graduation Photo"
+       }
+    ]

@@ -1,0 +1,201 @@
+/* fonts */
+
+@font-face {
+    font-family: "willow-serif";
+    src: url("../fonts/willow-serif.woff") format('woff');
+}
+@font-face {
+    font-family: "lemonade-regular";
+    src: url("../fonts/lemonade-regular-webfont.woff") format('woff');
+}
+/* global stylings */
+
+body {margin: 0;background-color:lightblue;}
+h1 {font-size:5.7em;font-family:willow-serif;font-weight:300;line-height:.9em;margin:.1em 0em}
+h3 {font-size: 1.5em;margin:.1em;}
+p {font-size: 2em; font-family: sans-serif;line-height: 1.3em}
+
+.paper-border-top {
+    height: 600px;
+}
+
+.bottomBorder {
+    background-image: url('../images/paper-bg-full-width-bottom.png');
+    background-size: contain;
+    background-color:#A0D9E6;
+}
+
+/* navbar stylings */
+
+.nav-lists {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-position: 50%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.nav-bar {
+    top: 0px;
+    width: 100%;
+    background-image: url('../images/paper-bg-full-width.png');
+    background-size: contain;
+    background-repeat: repeat-x;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-family: willow-serif;
+    font-weight: 300;
+    color: #356680;
+    font-size: 1.5em;
+    margin: 1em 1.6em;
+}
+
+.nav-link:hover {
+    cursor: pointer;
+    color: black;
+}
+
+/* homepage welcome image */
+.welcome-image {
+    height: 666px;
+    overflow-y: hidden;
+    width: 100%;
+    object-fit: cover;
+    background-image: url('../images/wedding-photos/kansas-city-plaza-wedding-party.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 24%;
+    background-size: cover;
+
+}
+
+.welcome-image img {
+    object-position: 0px 60px;
+    top: 80%;
+}
+
+
+/* homepage stylings */
+
+.homeBody {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+.rightPic {
+    width: 30%;
+    margin: auto
+}
+.leftPic {
+    width: 30%;
+    margin: auto
+}
+.copyBox {
+    width: 60%;
+    margin: 0 auto;
+    
+}
+
+/* photobar styling */
+.photoBar {
+    width: 100%;
+    margin: auto;
+    margin-top: 1em;
+    background-image: url('../images/wedding-photos/kansas-city-plaza-wedding-party.jpg');
+    background-position: center;
+    color: white;
+}
+
+.overlay {
+    background-color: rgba(53, 102, 128, .7);
+    background-size: cover;
+    padding: 1em;
+}
+
+.photoP {
+    font-size: 2em
+}
+
+/* Services Page */
+
+.serviceBody {
+    background-color: white;
+    margin: auto;
+}
+
+.serviceSelect {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.serviceSelect p {
+    max-width: 700px;
+    margin: auto;
+}
+
+.serviceSelect button {
+    padding: .5em 1em;
+    font-size: 1em;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 1em;
+    background-color:#356680;
+    color: white;
+    border-radius: 20px;
+    border: none;
+
+}
+
+.serviceSelect button:hover {
+    color:rgb(53, 102, 128,);
+    background-color: black;
+    cursor: pointer;
+}
+
+.serviceSelect button:active {
+    background-color: #A0D9E6;
+}
+
+.galleryBox {
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.galleryText {
+    margin: auto;
+    max-width: 900px;
+}
+
+.galleryText h1 {
+    font-size: 4em;
+}
+
+.galleryInfo {
+    max-width: 500px;
+    margin: 1em;
+}
+
+.galleryBox img {
+    max-width: 200px;
+    margin: .5em;
+    max-height: 350px;
+}
+
+/* About Page */
+
+.about {
+    max-width: 900px;
+}
+
+/* Mobile Stylings */
+
+@media (max-width: 500px) {
+    .nav-lists {
+        max-width: 200px;
+    }
+}

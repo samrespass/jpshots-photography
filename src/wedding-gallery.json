@@ -1,0 +1,22 @@
+[
+    
+{ 
+"gallery_description": "You'll describe the gallery info in the JSON files and then we'll render them up front when users view them. This one's about weddings",
+ "name": "Kansas City Wedding Dip Kiss",
+ "category": "weddings",
+ "image": "https://i.imgur.com/81RfIrU.jpg",
+ "alt": "Kansas City wedding photography dip kiss"
+},
+{ 
+    "name": "Kansas City Wedding Entourage",
+    "category": "weddings",
+    "image": "https://i.imgur.com/8RNznEq.jpg",
+    "alt": "Kansas City wedding party"
+   },
+{ 
+    "name": "Kansas City Wedding Party",
+    "category": "weddings",
+    "image": "https://i.imgur.com/sZWmgTP.jpg",
+    "alt": "Kansas City wedding party"
+   }
+]
