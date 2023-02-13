@@ -15,10 +15,10 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "@chakra-ui/react": "^2.3.2",
-    "@emotion/react": "^11.10.4",
-    "@emotion/styled": "^11.10.4",
-    "framer-motion": "^7.3.5",
+    "@chakra-ui/react": "^2.4.2",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "framer-motion": "^7.6.18",
     "gatsby": "^4.23.0",
     "gatsby-plugin-google-analytics": "^4.18.0",
     "gatsby-plugin-image": "^2.18.1",
@@ -29,8 +29,10 @@
     "gatsby-source-filesystem": "^4.18.1",
     "gatsby-transformer-sharp": "^4.18.1",
     "react": "^18.1.0",
+    "react-datepicker": "^4.8.0",
     "react-dom": "^18.1.0",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "react-photo-gallery": "^8.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.19.1",

@@ -3,6 +3,7 @@ import "/src/styles/global.css"
 import Navbar from "/src/components/navbar.js"
 import Photobar from "/src/components/photo-bar.js"
 import Welcome from "/src/components/welcome-image.js"
+import Footer from "/src/components/footer.js"
 import { StaticImage } from "gatsby-plugin-image"
 
 // markup
@@ -10,8 +11,10 @@ const IndexPage = () => {
   return (
     <main>
       <title>JPShots Photography</title>
-      <Welcome></Welcome>
       <Navbar></Navbar>
+      <Welcome/>
+      <div className="homePage">
+      <div className="topBorder">&nbsp;</div>
       <div className="homeBody">
       <div className="copyBox">
       <h1>Let's Talk About Some Wedding Shit</h1>
@@ -22,16 +25,10 @@ const IndexPage = () => {
         everyone's perception of your marriage and the trajectory of your lives.
       </p>
       </div>
-      
-      <div className="rightPic">
-      <StaticImage src='../images/kansas-city-wedding-photography-dip-kiss.jpg' alt="JPShots logo" />
-      </div>
-      <div className="fullWidthBox">
 
       </div>
-      </div>
-      <div className="bottomBorder">&nbsp;</div>
-      <Photobar></Photobar>
+     </div>
+     <Footer/>
     </main>
   )
 }

@@ -5,9 +5,8 @@ import { StaticImage } from "gatsby-plugin-image"
 
 export default function Welcome() {
     return (
-    <div className="paper-border-top">
     <div className="welcome-image">
-    </div>
+    &nbsp;
     </div>
 
     )

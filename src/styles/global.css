@@ -8,21 +8,40 @@
     font-family: "lemonade-regular";
     src: url("../fonts/lemonade-regular-webfont.woff") format('woff');
 }
+
+@import url("https://use.typekit.net/vug5owq.css");
+
 /* global stylings */
 
-body {margin: 0;background-color:lightblue;}
-h1 {font-size:5.7em;font-family:willow-serif;font-weight:300;line-height:.9em;margin:.1em 0em}
+body {margin: 0;background-color:lightblue;padding-top:240px;}
+h1 {font-size:3em;font-family: rough-love;font-weight:300;margin: 0 auto;color:#A1224E;}
+h2 {font-size:2.5em;font-family:willow-serif;font-weight:300;line-height:.9em;margin:0 auto;color:#34657F;}
 h3 {font-size: 1.5em;margin:.1em;}
-p {font-size: 2em; font-family: sans-serif;line-height: 1.3em}
+p {font-size: 1.1em; font-family: sans-serif;line-height: 1.3em;color:#34657F;}
 
 .paper-border-top {
-    height: 600px;
+    height: 350px;
 }
 
 .bottomBorder {
     background-image: url('../images/paper-bg-full-width-bottom.png');
     background-size: contain;
-    background-color:#A0D9E6;
+    background-color:rgba(53, 102, 128, 0);
+    z-index: 11;
+    margin: 0;
+    padding: 0;
+}
+
+.topBorder {
+    background-image: url('../images/paper-bg-full-width-top.png');
+    background-size: contain;
+
+}
+
+.wrap {
+    width: 100%;
+    margin: auto;
+    
 }
 
 /* navbar stylings */
@@ -33,40 +52,62 @@ p {font-size: 2em; font-family: sans-serif;line-height: 1.3em}
     justify-content: center;
     background-position: 50%;
     margin: auto;
+    padding-top: 20px;
     flex-wrap: wrap;
+    background-color: #f5eadb;
 }
 
 .nav-bar {
     top: 0px;
     width: 100%;
-    background-image: url('../images/paper-bg-full-width.png');
+    position: fixed;
+    z-index: 10;
     background-size: contain;
     background-repeat: repeat-x;
 }
 
 .nav-link {
     text-decoration: none;
-    font-family: willow-serif;
-    font-weight: 300;
-    color: #356680;
-    font-size: 1.5em;
-    margin: 1em 1.6em;
+    font-family: Aptly;
+    font-style: medium;
+    text-transform: uppercase;
+    display: flex;
+    letter-spacing: 0.1em;
+    align-items: center;
+    color: #34657F;
+    font-size: 2em;
+    margin: 1em 1em;
+    max-height: 100px;
+    padding: 0 1em;
+    background-image: url('../images/button.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
 }
+
+
 
 .nav-link:hover {
     cursor: pointer;
-    color: black;
+    background-image: url('../images/button-hover.png');
+    color: #A0D9E6;
+}
+
+
+.logo {
+    width: 200px;
 }
 
 /* homepage welcome image */
 .welcome-image {
-    height: 666px;
+    height: 900px;
     overflow-y: hidden;
     width: 100%;
     object-fit: cover;
     background-image: url('../images/wedding-photos/kansas-city-plaza-wedding-party.jpg');
     background-repeat: no-repeat;
-    background-position: 50% 24%;
+    background-position:  50%  20%;
     background-size: cover;
 
 }
@@ -79,10 +120,18 @@ p {font-size: 2em; font-family: sans-serif;line-height: 1.3em}
 
 /* homepage stylings */
 
+.homePage {
+    position: fixed;
+    bottom: 0;
+}
+
 .homeBody {
     display: flex;
     flex-wrap: wrap;
-    background-color: white;
+    background-color: #f5eadb;
+    text-align: center;
+    justify-content: center;
+   padding-bottom: 2em;
 }
 
 .rightPic {
@@ -94,9 +143,24 @@ p {font-size: 2em; font-family: sans-serif;line-height: 1.3em}
     margin: auto
 }
 .copyBox {
-    width: 60%;
+    width: 69%;
     margin: 0 auto;
+    text-align: center;
     
+}
+
+/* Footer */
+
+.footer {
+    z-index: 20;
+    position:fixed;
+    font-family: Aptly;
+    width: 100%;
+    color:#34657F;
+    background-color:#f5eadb;
+    text-align: center;
+    margin-bottom: 1em ;
+    bottom: 0;
 }
 
 /* photobar styling */
@@ -106,7 +170,7 @@ p {font-size: 2em; font-family: sans-serif;line-height: 1.3em}
     margin-top: 1em;
     background-image: url('../images/wedding-photos/kansas-city-plaza-wedding-party.jpg');
     background-position: center;
-    color: white;
+    color: #f5eadb;
 }
 
 .overlay {
@@ -119,10 +183,11 @@ p {font-size: 2em; font-family: sans-serif;line-height: 1.3em}
     font-size: 2em
 }
 
+
+
 /* Services Page */
 
 .serviceBody {
-    background-color: white;
     margin: auto;
 }
 
@@ -130,6 +195,7 @@ p {font-size: 2em; font-family: sans-serif;line-height: 1.3em}
     margin: auto;
     width: 100%;
     text-align: center;
+    background-color: #f5eadb;
 }
 
 .serviceSelect p {
@@ -139,57 +205,398 @@ p {font-size: 2em; font-family: sans-serif;line-height: 1.3em}
 
 .serviceSelect button {
     padding: .5em 1em;
-    font-size: 1em;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5em;
+    color: #34657F;
+    font-family: Aptly;
     margin: 1em;
-    background-color:#356680;
-    color: white;
+    background-color: rgba(53, 102, 128, 0);
     border-radius: 20px;
     border: none;
 
 }
 
 .serviceSelect button:hover {
-    color:rgb(53, 102, 128,);
-    background-color: black;
+    color: #A0D9E6;
+    text-decoration: underline;
     cursor: pointer;
 }
 
-.serviceSelect button:active {
-    background-color: #A0D9E6;
+
+.selected {
+    text-decoration: underline;
+}
+
+.Weddings {
+    height: 666px;
+    overflow-y: hidden;
+    width: 100%;
+    object-fit: cover;
+    background-image: url('../images/wedding-banner.png');
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+    background-size: cover;
+    padding-left: 20px;
+}
+
+.Engagement {
+    height: 666px;
+    overflow-y: hidden;
+    width: 100%;
+    object-fit: cover;
+    background-image: url('../images/engagement-banner.png');
+    background-repeat: no-repeat;
+    background-position:  50% 50%;
+    padding-left: 20px;
+    background-size: cover;
+}
+
+.serviceText {
+    z-index: 11;
+    display: flex;
+    padding-bottom: 20px;
+    font-size: 5em;
+    font-family: rough-love;
+    color: white;
+}
+
+.serviceCopy {
+    padding-left: 20px;
+    max-width: 500px;
+}
+
+.serviceCopy p{
+    color: #fff;
 }
 
 .galleryBox {
-    display: flex;
     margin: auto;
-    flex-wrap: wrap;
     justify-content: center;
+    padding: 0 2.2em 5em 2.2em;
+    display: flex;
+    flex-wrap: wrap;
+    width: 850px;
 }
+
+
 
 .galleryText {
     margin: auto;
-    max-width: 900px;
+    text-align: center;
+    background-color: #f5eadb;
 }
 
 .galleryText h1 {
     font-size: 4em;
+    
 }
 
 .galleryInfo {
-    max-width: 500px;
+    max-width: 400px;
     margin: 1em;
+    background-color: #f5eadb;
 }
 
-.galleryBox img {
-    max-width: 200px;
-    margin: .5em;
-    max-height: 350px;
+.galleryPic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    padding: 5px;
 }
+
+.react-photo-gallery--gallery {
+    background-color: #f5eadb;
+}
+
 
 /* About Page */
 
 .about {
     max-width: 900px;
+}
+/* Contact Page */
+
+.contactForm {
+    height: 600px;
+    margin: 2em ;
+    background-color: pink;
+    width: 100%;
+    border: 0;
+    display: flex;
+}
+
+#formsubmit {
+
+}
+
+.contact-form {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin: auto;
+    max-width: 500px;
+}
+
+input {
+    border: 2px solid #000;
+    margin: .2em 0;
+    display: flex;
+    padding: 1em;
+}
+
+label {
+    margin: .2em 0;
+    font-size: 1.5em;
+    font-family: Aptly;
+}
+
+input.messageBox {
+    padding-bottom: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    text-overflow: clip;
+    word-break: break-all;
+}
+
+/* React Datepicker */
+
+.react-datepicker {
+    position: absolute;
+    width: 250px;
+    border-radius: 20px;
+    z-index: 12;
+    left: -16em;
+}
+
+.react-datepicker__week {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 14.28% 14.28% 14.28% 14.28% 14.28% 14.28% 14.28%;
+}
+
+.react-datepicker__navigation {
+    border: 0;
+    background-color: #34657F;
+    font-family: Aptly;
+    color: #fff;
+    padding: .5em;
+    margin: .5em;
+    width: 100px;
+    border-radius: 20px;
+}
+
+.react-datepicker__month {
+    max-width: 400px;
+}
+
+.react-datepicker__month-container {
+    background-color: #ffffff;
+    border-radius: 20px;
+    position: absolute;
+    top: -17em;
+
+}
+
+.react-datepicker__day {
+    padding: 6px;
+}
+
+.react-datepicker__current-month {
+    padding: 1em;
+    background-color: #A0D9E6;
+    font-family: Aptly;
+    color: #ffffff;
+    border-radius: 20px 20px 0 0;
+}
+
+.react-datepicker__month {
+    margin: auto;
+    font-family: Aptly;
+}
+
+.react-datepicker__day-names {
+    display: flex;
+    justify-content: space-around;
+    font-family: Aptly;
+}
+
+.react-datepicker__day-name {
+    padding: 10px;
+}
+
+.react-datepicker__day--outside-month {
+    background-color: #a4a4a434;
+    border-radius: 100%;
+    color: #fff;
+}
+
+.react-datepicker__tab-loop {
+    position: absolute;
+top: 23.3em;
+left: 33em;
+
+}
+
+textarea {
+    min-width: 344px;
+    min-height: 150px;
+    padding: .5em;
+}
+
+/* Vendor Stylings */
+
+.vendorBooth {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 16em;
+    justify-content: center;
+}
+
+.vendor {
+    display: flex;
+    justify-content: center;
+}
+
+.vendorInfo {
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 400px;
+    background-size: contain;
+}
+
+.vendorProfile {
+    background-image: url('../images/paper-square-bg.png');
+    background-repeat: no-repeat;
+    width: 440px;
+    max-height: 480px;
+    margin-bottom: 1em;
+    background-size: 100% 80%;
+}
+
+.vendorPic {
+    margin: 2em;
+    text-align: center;
+}
+
+.vendorText {
+    margin: 2em;
+    padding: 1em 2em 1em 2em;
+    text-align: center;
+    background-image: url('../images/paper-rectangle-bg.png');
+    max-width: 440px;
+    max-height: 220px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%
+}
+
+.vendorCopy {
+    padding: .5em;
+    margin: 0;
+}
+
+.vendorBlurb {
+    margin: 0 2em;
+    padding: 1.5em;
+    text-align: center;
+    background-image: url('../images/paper-rectangle-bg.png');
+    max-width: 440px;
+    max-height: 220px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%
+}
+
+.vendorBio {
+    text-align: left;
+}
+
+
+.vendorPic img {
+    max-width: 275px;
+    max-height: 275px;
+    border-radius: 150px;
+    margin: .5em;
+}
+
+.navButton {
+    width: 200px;
+}
+
+.vendorNav {
+    margin: 0 .5em;
+    font-size: 16px;
+    border: 0;
+    border-radius: 20px;
+    padding: 0 3em;
+}
+
+.filmGallery {
+    display: flex;
+    justify-content: start;
+    margin: auto;
+    flex-wrap: wrap;
+    width: 300px;
+}
+
+.filmGallery img{
+    width: 75px;
+    height: 75px;
+    margin: 0 .5em;
+    border-radius: 120px
+}
+
+.filmItem {
+    opacity: 50%;
+    background-color: rgba(53, 102, 128, 0);
+    border: 0;
+}
+
+.filmItem:hover {
+    opacity: 100%;
+}
+
+/* cake vendor stylings */
+
+.cakeVendor {
+    width: 100%;
+    margin: 0 2em;
+    display: flex;
+}
+
+.cakeVendor img{
+    max-width: 200px;
+    max-height: 300px;
+    margin: 1em;
+}
+
+/* small vendor stylings */
+
+.smallVendor {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    max-width: 440px;
+    margin: 1em 0;
+    background-size: 100% 80%;
+}
+
+.innerVendor {
+    background-image: url('../images/paper-square-bg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 30px;
+}
+
+.smallVendor img {
+    max-width: 250px;
+    padding: 1em;
+    border-radius: 50px;
+}
+
+.videoText {
+    margin: 0;
+}
+
+.smallVendorHeader {
+    padding-top: .5em;
 }
 
 /* Mobile Stylings */
@@ -197,5 +604,28 @@ p {font-size: 2em; font-family: sans-serif;line-height: 1.3em}
 @media (max-width: 500px) {
     .nav-lists {
         max-width: 200px;
+    }
+    .vendor {
+        flex-wrap: wrap;
+    }
+    .vendorBlurb {
+        max-width: 100%;
+        margin: auto;
+        padding: 0;
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 777px) {
+    .vendor {
+        flex-wrap: wrap;
+    }
+    .vendorBlurb {
+        max-width: 100%;
+        margin: auto;
+        padding: .5em;
+    }
+    .djNavigation {
+        position: relative;
     }
 }
