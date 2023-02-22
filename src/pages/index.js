@@ -17,7 +17,7 @@ const IndexPage = () => {
       <div className="topBorder">&nbsp;</div>
       <div className="homeBody">
       <div className="copyBox">
-      <h1>Let's Talk About Some Wedding Shit</h1>
+      <h1>Let's Talk About<br/> Some Wedding Shit</h1>
       <p>A lotta wedding photographers talk big shit but can't deliver, but
         I'm here to tell you that neither do we. We at JPShots will do whatever
         it takes to ruin this once in a lifetime moment. I personally guarantee

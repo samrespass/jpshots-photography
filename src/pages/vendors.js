@@ -14,6 +14,7 @@ const ServicesPage = () => {
       <main>
         <title>JPShots Photography | Vendors</title>
         <Navbar/>
+        <div className="title"><h1>Trusted Vendors</h1></div>
         <div className="vendorBooth">
         <Vendordj/>
         <Vendorcake/>

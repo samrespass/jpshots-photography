@@ -5,9 +5,11 @@ import { StaticImage } from "gatsby-plugin-image"
 
 export default function Footer() {
     return (
+        <>
     <div className="footer">
     &#169; 2022 JPShots
     </div>
-
+    <div className="bottomBorder">&nbsp;</div>
+    </>
     )
 }

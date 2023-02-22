@@ -10,7 +10,7 @@ export default function VendorDj() {
   const [slide, setSlide] = useState(0);
 
   return (
-    <div className="vendor">
+    <div className="vendorDj">
       <>
         <div className="vendorProfile">
           <div className="vendorPic">
@@ -40,7 +40,10 @@ export default function VendorDj() {
             Ask how comfortable they are experienced with mixing songs.</p></div>
           </div>
           <div className="vendorText">
-            <div className="vendorBio"><p>{jockey[slide].profile}</p></div>
+            <div className="vendorBio">
+            <h2>About {jockey[slide].name}</h2>
+            <p>{jockey[slide].profile}</p>
+            </div>
           </div>
         </div>
       </>

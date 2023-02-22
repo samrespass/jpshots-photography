@@ -11,8 +11,8 @@ export default function VendorCake() {
 
   return (
     <main className="wrap">
-      <div className="topBorder">&nbsp;</div>
-      <div className="homeBody">
+    
+      <div className="vendorCakeBody">
         <div className="cakeVendor">
         <div className="cakeText">
           <h2>Foster's Frosting</h2>
@@ -26,10 +26,8 @@ export default function VendorCake() {
             fun/creative cakes.
           </p>
         </div>
-          <img src='https://i.imgur.com/bjXBomM.jpg'/>
-        </div>
+                 </div>
       </div>
-      <div className="bottomBorder">&nbsp;</div>
     </main>
   );
 }
